@@ -7,19 +7,11 @@ namespace ArrayPractice1
 
     class Program
     {
-        public static void PrintArray(int[] array)
-        {
-            Console.Write("[");
-            foreach (var item in array)
-            {
-                Console.Write(item+" ");
-            }
-            Console.WriteLine("]");
-        }
         static void Main(string[] args)
         {
+            Print printarr = new Print();
             int[] arr = { 5, 9, 6, 8, 10 };
-            PrintArray(arr);
+            printarr.PrintArray(arr);
         }
     }
 }
